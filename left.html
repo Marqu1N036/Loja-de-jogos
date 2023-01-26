@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imagens/game.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="jogos.css" />
+
+    <link rel="stylesheet" href="./responsivo.css" />
+    <title>Left 4 dead</title>
+  </head>
+  <body>
+    <div class="fundo-video">
+      <video class="video" autoplay loop muted>
+        <source
+          src="./video/Left 4 Dead 2 - Official The Last Stand Update Trailer(480P).mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+    <header class="cabecalho">
+      <a>
+        <img class="logo" src="./imagens/game.png" alt="Logo" />
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="informacoes">
+        <img class="imagem-titulo" src="./imagens/left.png" alt="titulo do jogo" />
+        <p class="descricao">
+          Left 4 Dead começa na Pensilvânia, após o surto de um vírus letal
+          conhecido apenas como "Green Flu", um vírus altamente transmissível
+          que se manifesta no indivíduo contaminado causando extrema agressão,
+          com um aumento maciço de violência e com a perda de muitas das funções
+          cerebrais superiores da sua vítima.
+        </p>
+        <button class="botao-trailer">Veja o trailer</button> <br />
+        <br />
+        <button class="botao-trailer">COMPRE AQUI</button>
+      </div>
+      <img class="left" src="./imagens/bicho.png" alt="" />
+
+      <div class="modal">
+        <div class="conteudo-modal">
+          <span class="fechar-modal">X</span>
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/wJMF-zxgbLc"
+            title="Trailer oficial"
+            frameborder="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pictujre-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

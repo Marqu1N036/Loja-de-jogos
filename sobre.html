@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+    document.querySelector('body')
+          .classList
+          .add('loaded');
+});
+    </script>
+    
+    
+<style>
+        h2{
+            color: white;
+            display: block;
+            margin-top: 100px;
+            text-align: center;
+            font-size: 50px;
+ }
+ body{
+    background-color: black;
+    background-image: none;
+ }
+ .chama{
+    text-align: center;
+ }
+ img{
+    width: 520px;
+    transition: none;
+    border-radius: 50%;
+}
+img:hover {
+    width: 520px;
+
+}
+@keyframes fade-in {
+  from { opacity: 0 }
+  to   { opacity: 1 }
+}
+
+img {
+  opacity: 0;
+  animation: fade-in 2s normal forwards ease-in-out;
+  animation-play-state: paused
+}
+
+body.loaded img {
+  animation-play-state: running
+}
+
+body.loaded img:nth-child(2){ animation-delay: 1s }
+body.loaded img:nth-child(3){ animation-delay: 2s }
+body.loaded img:nth-child(4){ animation-delay: 3s }
+
+</style>
+    
+    <title>Sobre</title>
+</head>
+<body class="bodysobre">
+
+    <header class="cabecalho">
+        <a>
+          <img class="logo" src="./imagens/game.png" alt="Logo">
+          
+        </a>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+      </header>
+</div>
+    <h2>Feito com muito carinho :)</h2>
+    <div class="chama">
+      <img src="./imagens/one punch man saitama cute.jpg" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./imagens/game.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="jogos.css"/>
+    
+    <link rel="stylesheet" href="./responsivo.css">
+    <title>Amnsesia</title>
+  </head>
+  <body>
+    <div class="fundo-video">
+      <video class="video" autoplay loop muted>
+        <source src="./video/Amnesia_ Rebirth - Launch Trailer _ PS4(720P_HD).mp4" type="video/mp4" />
+      </video>
+    </div>
+    <header class="cabecalho">
+      <a>
+        <img class="logo" src="./imagens/game.png" alt="Logo">
+        
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="informacoes">
+        <img
+          class="imagem-titulo"
+          src="./imagens/amne.png"
+          alt="titulo do jogo"
+        />
+        <p class="descricao">
+          Amnesia Rebirth é ambientado no ano de 1937, quase 100 anos após a fuga de Daniel do Castelo de Brennenburg.
+           O game conta a história de Tasi Trianon, uma desenhista industrial que está viajando em uma expedição para visitar uma mina de ouro na África,
+            junto de seu marido Salim e uma equipe inteira de exploradores.
+        </p>
+        <button class="botao-trailer">Veja o trailer</button> <br> <br>
+        <button class="botao-trailer">COMPRE AQUI</button>
+      </div>
+      <img class="monster" src="" alt="" />
+
+      <div class="modal">
+        <div class="conteudo-modal">
+          <span class="fechar-modal">X</span>
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/zZGDBBk89Vk" title="Trailer oficial" frameborder="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pictujre-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <title>Melhores de mundo aberto</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+    document.querySelector('body')
+          .classList
+          .add('loaded');
+});
+    </script>
+    <style>
+        @keyframes fade-in {
+  from { opacity: 0 }
+  to   { opacity: 1 }
+}
+
+img {
+  opacity: 0;
+  animation: fade-in 2s normal forwards ease-in-out;
+  animation-play-state: paused
+}
+
+body.loaded img {
+  animation-play-state: running
+}
+
+body.loaded img:nth-child(2){ animation-delay: 1s }
+body.loaded img:nth-child(3){ animation-delay: 2s }
+body.loaded img:nth-child(4){ animation-delay: 3s }
+    
+     img{
+    width: 520px;
+    transition: all 0.5s;
+}
+img:hover {
+    width: 540px;
+
+}
+
+    </style>
+</head>
+<body class="bodyworld">
+    <header class="cabecalho">
+        <a>
+          <img class="logo" src="./imagens/game.png" alt="Logo">
+          
+        </a>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+    <div>
+        <div class="containerworld container">
+            <div>
+                <h1 class="worldt">Red dead redemption</h1>
+                <a href="red.html"><img src="./imagens/941295.jpg" alt="Red dead redemption"/></a>
+            </div>
+            <div>
+                <h1 class="worldt">Elden ring</h1>
+                <a href="elden.html"><img src="./imagens/cropped-1920-1080-1151242.jpg" alt="elden ring"/></a>
+            </div>
+            <div>
+                <h1 class="worldt">Minecraft</h1>
+                <a href="mine.html"><img src="./imagens/cropped-1920-1080-285391.jpg" alt="Minecraft"></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

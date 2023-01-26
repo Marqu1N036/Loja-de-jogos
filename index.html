@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="shortcut icon"
+      href="./imagens/game.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+    <title>Loja de jogos</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+    document.querySelector('body')
+          .classList
+          .add('loaded');
+});
+    </script>
+    <style>
+        @keyframes fade-in {
+  from { opacity: 0 }
+  to   { opacity: 1 }
+}
+
+img {
+  opacity: 0;
+  animation: fade-in 2s normal forwards ease-in-out;
+  animation-play-state: paused
+}
+
+body.loaded img {
+  animation-play-state: running
+}
+
+body.loaded img:nth-child(2){ animation-delay: 1s }
+body.loaded img:nth-child(3){ animation-delay: 2s }
+body.loaded img:nth-child(4){ animation-delay: 3s }
+
+    </style>
+</head>
+<body class="gradient"> 
+
+    <header class="cabecalho">
+      <a>
+        <img class="logo" src="./imagens/game.png" alt="Logo">
+        
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+<div>
+    <div class="container">
+        <div>
+            <h1 class="terror">Terror</h1>
+            <a href="terror.html"><img src="./imagens/766105.jpg" alt="The last of us"/></a>
+        </div>
+        <div>
+            <h1 class="mundo">Mundo aberto</h1>
+            <a href="openworld.html"><img src="./imagens/754458.jpg"/></a>
+        </div>
+        <div>
+            <h1 class="coop">Co-op</h1>
+            <a href="coop.html"><img src="./imagens/910531.jpg" alt=""></a>
+        </div>
+    </div>
+</div>
+<div class="rodape">
+    <footer> By Marcos Vinicius dos Santos Gomes</footer>
+</div>    
+</body>
+</html>

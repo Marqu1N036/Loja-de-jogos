@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imagens/game.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="jogos.css" />
+
+    <link rel="stylesheet" href="./responsivo.css" />
+    <title>Minecraft</title>
+  </head>
+  <body>
+    <div class="fundo-video">
+      <video class="video" autoplay loop muted>
+        <source
+          src="./video/Official Minecraft Trailer(720P_HD).mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+    <header class="cabecalho">
+      <a>
+        <img class="logo" src="./imagens/game.png" alt="Logo" />
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="informacoes">
+        <img
+          class="imagem-titulo"
+          src="./imagens/Minecraft-Logo-PNG.png"
+          alt="titulo do jogo"
+        />
+        <p class="descricao">
+          Minecraft é um jogo eletrônico lançado em 2009 que consiste em
+          sobreviver em um mundo formado (majoritariamente) por blocos cúbicos.
+          Steve, o personagem controlado pelo jogador, inicia o jogo em um
+          ambiente repleto de árvores, montanhas, rios
+        </p>
+        <button class="botao-trailer">Veja o trailer</button> <br />
+        <br />
+        <button class="botao-trailer">COMPRE AQUI</button>
+      </div>
+      <img class="imagem-titulo" src="./imagens/Figura-Minecraft-PNG.png" alt="" />
+
+      <div class="modal">
+        <div class="conteudo-modal">
+          <span class="fechar-modal">X</span>
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/MmB9b5njVbA"
+            title="Trailer oficial"
+            frameborder="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pictujre-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
